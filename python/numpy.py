@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Arrays
 import numpy
 
@@ -43,3 +44,20 @@ print(arr.transpose()) #turn the sequence of an array
  #[2 5]
  #[3 6]]
 print(arr.flatten()) #turns the dimensional input to one dimension
+=======
+#Arrays
+import numpy
+
+def arrays(arr):
+    # complete this function
+    # use numpy.array
+    tempArr = []
+    for i in range(len(arr)):
+        tempArr.append(arr[len(arr)-i-1])
+    nump = numpy.array(tempArr,float) #convert to float
+    return nump
+
+arr = input().strip().split(' ')
+result = arrays(arr)
+print(result)
+>>>>>>> d9465b41117bc7f4c58be78b1037ded55fc9b143
